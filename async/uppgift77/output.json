@@ -1,0 +1,28 @@
+[
+  "movies:",
+  {
+    "Titel": "Superman II",
+    "Duration": 90,
+    "Year": 2015
+  },
+  {
+    "Titel": "BatmanII",
+    "Duration": 90,
+    "Year": 2014
+  },
+  {
+    "Titel": "Spiderman",
+    "Duration": 120,
+    "Year": 2002
+  },
+  {
+    "Titel": "Spiderman",
+    "Duration": 120,
+    "Year": 2002
+  },
+  {
+    "Title": "Avengers",
+    "Duration": 180,
+    "Year": 2020
+  }
+]

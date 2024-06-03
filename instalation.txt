@@ -1,0 +1,68 @@
+## nodemon lokalt
+npm install --save-dev nodemon (förkortning blir) ==> npm i -D nodemon
+* efetr installationen skriver man: npm start
+* men bättre att köra ** npm run dev **
+
+** run nodemon
+-- nodemon index.js
+_________________________________________________________________________
+
+## nodemon globalt
+-- npm install -g nodemon
+
+***************************************************************************
+
+npm init -y : detta ger en json-packet eller kör man bara npm init
+
+npm i express
+
+***************************************************************************
+
+Nu kan vi skriva: 
+-- npm run dev
+-- node index.js
+
+***************************************************************************
+
+Förtydligande:
+
+* Vissa steg bör vi göra för att apppen ska fungera som den ska. *
+
+1. Installera package.json
+package.json ska se ut på detta sätt :
+
+{
+  "name": "express",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "npx nodemon index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
+
+--  Denna ska finnas  ===> "type": "module",
+
+-- Denna måste vara med för att vi ska kunna köra "npm run dev", alltså "start och dev":
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "npx nodemon index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+-- Sedan måste vi ha "nodemon" som devDependencies:
+ "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+
+
+
+

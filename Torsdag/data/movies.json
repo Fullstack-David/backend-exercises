@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name": "Die hard",
+        "releaseYear":1995,
+        "duration":120
+
+    },
+    {
+        "id":2,
+        "name": "Batman",
+        "releaseYear":2005,
+        "duration":140 
+
+    },
+    {
+        "id":3,
+        "name": "Superman",
+        "releaseYear":2015,
+        "duration":160
+
+    },
+    {
+        "id":4,
+        "name": "Avangers",
+        "releaseYear":2018,
+        "duration":180
+
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "The Shawshank Redemption",
+        "creator": "Frank Darabont",
+        "best_actors": {
+            "male": "Tim Robbins",
+            "female": "Rita Hayworth"
+        },
+        "year": 1994,
+        "earnings": 28341469
+    },
+    {
+        "id": 2,
+        "title": "Titanic",
+        "creator": "James Cameron",
+        "best_actors": {
+            "male": "Leonardo DiCaprio",
+            "female": "Kate Winslet"
+        },
+        "year": 1997,
+        "earnings": 2187463944
+    },
+    {
+        "id": 3,
+        "title": "The Matrix",
+        "creator": "The Wachowskis",
+        "best_actors": {
+            "male": "Keanu Reeves",
+            "female": "Carrie-Anne Moss"
+        },
+        "year": 1999,
+        "earnings": 463517383
+    },
+    {
+        "id": 4,
+        "title": "Gladiator",
+        "creator": "Ridley Scott",
+        "best_actors": {
+            "male": "Russell Crowe",
+            "female": "Connie Nielsen"
+        },
+        "year": 2000,
+        "earnings": 457640427
+    },
+    {
+        "id": 5,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "creator": "Peter Jackson",
+        "best_actors": {
+            "male": "Elijah Wood",
+            "female": "Liv Tyler"
+        },
+        "year": 2001,
+        "earnings": 871530324
+    },
+    {
+        "id": 6,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "creator": "Gore Verbinski",
+        "best_actors": {
+            "male": "Johnny Depp",
+            "female": "Keira Knightley"
+        },
+        "year": 2003,
+        "earnings": 654264015
+    },
+    {
+        "id": 7,
+        "title": "The Dark Knight",
+        "creator": "Christopher Nolan",
+        "best_actors": {
+            "male": "Christian Bale",
+            "female": "Maggie Gyllenhaal"
+        },
+        "year": 2008,
+        "earnings": 1004558444
+    },
+    {
+        "id": 8,
+        "title": "Avatar",
+        "creator": "James Cameron",
+        "best_actors": {
+            "male": "Sam Worthington",
+            "female": "Zoe Saldana"
+        },
+        "year": 2009,
+        "earnings": 2927431689
+    },
+    {
+        "id": 9,
+        "title": "Inception",
+        "creator": "Christopher Nolan",
+        "best_actors": {
+            "male": "Leonardo DiCaprio",
+            "female": "Marion Cotillard"
+        },
+        "year": 2010,
+        "earnings": 836848102
+    },
+    {
+        "id": 10,
+        "title": "Frozen",
+        "creator": "Chris Buck, Jennifer Lee",
+        "best_actors": {
+            "male": "Jonathan Groff",
+            "female": "Idina Menzel"
+        },
+        "year": 2013,
+        "earnings": 1276480335
+    }
+]

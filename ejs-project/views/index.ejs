@@ -1,0 +1,24 @@
+<!-- <%= %> -->
+<!-- <% %> -->
+
+<%-include("layout/header") %>
+
+<main>
+  <form action="/" method="post">
+    <input
+      type="text"
+      placeholder="enter a name of programmerings language"
+      name="plNames"
+    />
+    <button type="submit">Add Data</button>
+  </form>
+  <ul>
+    <% if(plNames.length > 0){ for(let i = 0; i < plNames.length; i++){ %>
+    <li><%= plNames[i] %></li>
+    <% } } else { %>
+    <p>No data available</p>
+    <% } %>
+  </ul>
+</main>
+
+<%-include("layout/header") %> <%-include("layout/footer") %>

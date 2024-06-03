@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>You searched for: <%= data.userQuery %></h1>
+      <% if(isLoggedIn){ %>
+      <h2><%= message %></h2>
+      <h4>You are logged in as : <%= username %></h4>
+      <% } %>
+      <ul>
+        <% searchResults.forEach(result => { %>
+        <li><%= result %></li>
+        <% }); %>
+      </ul>
+      <img class="superman" src="/images/superman.jpg" alt="" />
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

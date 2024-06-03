@@ -1,0 +1,26 @@
+[
+    {
+    "heroName": "Dr Manhattan",
+    "firstName": "Jonathan",
+    "lastName": "Osterman",
+    "image": "./images/doctor.png",
+    "description": "Super power: 1. Omnipotens, 2. Omniscience",
+    "id": 0
+    },
+    {
+    "heroName": "Superman",
+    "firstName": "Clark",
+    "lastName": "Kent",
+    "image": "./images/superman.png",
+    "description": "Details information is shown here...",
+    "id": 1
+    },
+    {
+    "heroName": "Hulk",
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "image": "./images/hulk.png",
+    "description": "Details information is shown here...",
+    "id": 2
+    }
+]
