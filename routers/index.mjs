@@ -1,14 +1,15 @@
 import express from 'express';
 import { mockUsers } from './utils/constant.mjs'; 
-import usersRouter from './routes/users.mjs';
+import routes from './routes/allRoutes.mjs';
+
 const app = express();
+const PORT = 3001;
 
 //* Denna måste vara med om vi ha ren json-fil, annars får vi
 //* ut bara 'id' (tog mig fan 2 timmar för att fatta det)
 app.use(express.json());
-app.use(usersRouter);
+app.use(routes);
 
-const PORT = 3001;
 
 app.get('/', (request, response) => {
     return response.status(200).send('<h1>Hello and welcome to my website guys</h1>');

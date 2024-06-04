@@ -30,10 +30,4 @@ router.delete('/users/:id', (request, response) => {
     return response.status(200).send({ msg: 'The object deleted successfully.' });
 });
 
-
-
-
-
-
-
 export default router;
