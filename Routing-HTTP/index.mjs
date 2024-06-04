@@ -3,6 +3,8 @@ import usersRouter from "./routes/users.mjs";
 let app = express();
 let PORT = 3000;
 
+//* Denna måste vara med om vi ha ren json-fil, annars får vi
+//* ut bara 'id' (tog mig fan 2 timmar för att fatta det)
 app.use(express.json());
 
 app.use(usersRouter);

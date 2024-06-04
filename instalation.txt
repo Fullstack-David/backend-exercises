@@ -4,26 +4,20 @@ npm install --save-dev nodemon (förkortning blir) ==> npm i -D nodemon
 * men bättre att köra ** npm run dev **
 
 ** run nodemon
--- nodemon index.js
-_________________________________________________________________________
-
+nodemon index.js
+________________________________________________________________________
 ## nodemon globalt
--- npm install -g nodemon
+npm install -g nodemon
 
-***************************************************************************
-
+_________________________________________________________________________
 npm init -y : detta ger en json-packet eller kör man bara npm init
-
 npm i express
 
-***************************************************************************
-
+_________________________________________________________________________
 Nu kan vi skriva: 
--- npm run dev
--- node index.js
-
-***************************************************************************
-
+npm run dev
+node index.js
+_________________________________________________________________________
 Förtydligande:
 
 * Vissa steg bör vi göra för att apppen ska fungera som den ska. *
