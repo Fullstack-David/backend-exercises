@@ -1,0 +1,48 @@
+* To start mongodb: skriv följande bara 'mongosh' i terminalen.
+
+
+- show dbs: 
+test> show dbs
+admin   40.00 KiB
+config  72.00 KiB
+local   72.00 KiB
+
+- use admin = eller vad som helst(den skapar)
+- exit = loggar ut från mongodb
+- mongosh = startar mongodb servern
+- show dbs
+- db.createCollection('superhero')
+- show collections = för att se vilka collections vi har
+- db.superheroesTest.insertOne({heroName: "Superman", fisrName:"Klark", lastName:"Kent"})
+- db.superheroesTest.find() = för att se det vi har i den collection
+******* Avoid using 'insert-method'
+- db.superheros.insert({}) = för att kunna skicka in ett object/document i en collection
+- db.superheros.insert([]) = för att kunna skicka in flera object/document i en collection
+*******
+- db.superheros.insertOne({}) = för att kunna skapa en object
+- db.superheros.insertMany([]) = för att kunna skapa flera object
+- db = visar var man är 
+** 2 sätt att skapa en collection
+- db.customer.inserOne({name: "David", age: 15, gender: "male"}) = skapar en collection 
+- db.createCollection("products")
+- db.superhero.drop() = drom-metod raderar permanent från collections
+- db.superhero.inserOne({_id: "unique-id-1", name: "David", age: 20}) = om man vill skapa en egen id i stället för den slumpade id som mongodb ger oss
+- update-method = db.mycol.update({'title':'MongoDB Overview'},{$set:{'title':'New MongoDB Tutorial'}})
+- The remove() Method = >db.mycol.remove({'title':'MongoDB Overview'}), MongoDB's remove() method is used to remove a document from the collection. remove() method accepts two parameters. One is deletion criteria and second is justOne flag.
+
+
+
+************************ Hur skapar jag en databas i mongoDB ************************ 
+
+1. mongosh
+2. use bestFilms
+3. db.bestFilms.insertMany([{}])
+4. db.bestFilms.find()
+
+**************************************************************************************
+
+** Bra länk **
+https://www.digitalocean.com/community/tutorials/how-to-secure-mongodb-on-ubuntu-18-04
+
+
+** json vs bson

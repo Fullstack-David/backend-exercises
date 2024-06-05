@@ -1,0 +1,22 @@
+{
+  "name": "uppgift",
+  "version": "1.0.0",
+  "main": "index.module",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon index.mjs",
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0"
+  }
+}

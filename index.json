@@ -1,0 +1,85 @@
+[
+    {
+      "titel": "Game of Thrones",
+      "säsonger": [
+        {
+          "nummer": 1,
+          "episoder": [
+            {
+              "titel": "Vinter kommer",
+              "skådespelare": ["Sean Bean", "Emilia Clarke", "Kit Harington"],
+              "regissör": "David Benioff & D.B. Weiss",
+              "publiceringsdatum": "2011-04-17",
+              "genre": ["Drama", "Fantasy", "Äventyr"],
+              "speltid": "60 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            },
+            {
+              "titel": "The Kingsroad",
+              "skådespelare": ["Nikolaj Coster-Waldau", "Lena Headey", "Peter Dinklage"],
+              "regissör": "Alan Taylor",
+              "publiceringsdatum": "2011-04-24",
+              "genre": ["Drama", "Fantasy", "Äventyr"],
+              "speltid": "60 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            }
+          ]
+        },
+        {
+          "nummer": 2,
+          "episoder": [
+            {
+              "titel": "The North Remembers",
+              "skådespelare": ["Alfie Allen", "Sophie Turner", "Richard Madden"],
+              "regissör": "Alan Taylor",
+              "publiceringsdatum": "2012-04-01",
+              "genre": ["Drama", "Fantasy", "Äventyr"],
+              "speltid": "60 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            },
+            {
+              "titel": "The Rains of Castamere",
+              "skådespelare": ["Michelle Fairley", "Richard Madden", "Emilia Clarke"],
+              "regissör": "David Nutter",
+              "publiceringsdatum": "2013-06-02",
+              "genre": ["Drama", "Fantasy", "Äventyr"],
+              "speltid": "60 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            }
+          ]
+        }
+      ],
+      "genre": ["Drama", "Fantasy", "Äventyr"],
+      "speltid": "ca 60 minuter per episod",
+      "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+    },
+    {
+      "titel": "Breaking Bad",
+      "säsonger": [
+        {
+          "nummer": 1,
+          "episoder": [
+            {
+              "titel": "Pilot",
+              "skådespelare": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+              "regissör": "Vince Gilligan",
+              "publiceringsdatum": "2008-01-20",
+              "genre": ["Drama", "Kriminalare"],
+              "speltid": "50 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            },
+            {
+              "titel": "Pilot",
+              "skådespelare": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+              "regissör": "Vince Gilligan",
+              "publiceringsdatum": "2008-01-20",
+              "genre": ["Drama", "Kriminalare"],
+              "speltid": "50 minuter",
+              "poster": "https://m.media-amazon.com/images/I/51gU7zM4FML._AC_SL1500_.jpg"
+            }
+          ]
+        }
+        ]
+    }
+]
+  

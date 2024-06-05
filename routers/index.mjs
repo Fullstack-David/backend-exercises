@@ -1,5 +1,6 @@
 import express from 'express';
-import { mockUsers } from './utils/constant.mjs'; 
+import { mockUsers } from './utils/constant.mjs';
+import { query, validationResult } from 'express-validator'; 
 import routes from './routes/allRoutes.mjs';
 
 const app = express();
@@ -11,12 +12,28 @@ app.use(express.json());
 app.use(routes);
 
 
-app.get('/', (request, response) => {
+app.get('/', query().isString().notEmpty(),
+    (request, response) => {
+        const result = validationResult(request);
+        console.log(result);
     return response.status(200).send('<h1>Hello and welcome to my website guys</h1>');
 });
 
-app.get('/users', (request, response) => {
-    return response.status(200).send(mockUsers.map(user => user));
+app.get('/users', query('filter')
+    .isString()
+    .notEmpty()
+    .withMessage("Must not be empty.")
+    .isLength({ min: 2, max: 10 })
+    .withMessage("Must be at least 3-10 characters."),
+    (request, response) => {
+        const result = validationResult(request);
+        console.log(result);
+        const { query: { filter, value } } = request;
+        console.log('hej' + { query: { filter,value }});
+        if (filter && value) {
+            return response.send(mockUsers.filter((user) => user[filter].includes(value)));
+        }
+    return response.status(200).send(mockUsers);
 });
 
 app.listen(PORT, () => {

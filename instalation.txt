@@ -57,6 +57,9 @@ package.json ska se ut på detta sätt :
     "nodemon": "^3.1.0"
   }
 
+_________________________________________________________________________
+
+npm i express-validator
 
 
 
