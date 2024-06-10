@@ -35,9 +35,40 @@ local   72.00 KiB
 ************************ Hur skapar jag en databas i mongoDB ************************ 
 
 1. mongosh
-2. use bestFilms
+2. 
+    steg 1: use bestFilms // Anslut till databasen 'bestFilms'
+        steg 2: show collections
+            steg 3: du befinner dig i databasen och skriver db.bestFilms.find()
+
 3. db.bestFilms.insertMany([{}])
-4. db.bestFilms.find()
+4. db.bestFilms.find({name: "David"})
+4. db.bestFilms.find({name: "David"}, {_id: false, gender: 0})
+5. db.bestFilms.findOne({name: "David"})  = returns one document om vi inte anger vilket så retunerar den det första documentet från collection.
+6. db.bestFilms.find({name: "David"}, {_id: false}).pretty()
+7.db.users.updateOne({name: "David"}, {$set: {name: "sofie", age: 31, gender: "female"}})
+8. updateOne.method = uppdaterar den första som bobjectet i arrayen 
+9. om ett object inte har ett property och vi använder updateOne.method, kommer den att lägga till i objectet.
+10. db.users.updateMany({name: "sofie", {$set: {gender: "female"}}})
+11. db.users.deleteOne({name: "sofie"}) = delete the first document/object
+12. db.users.deleteOne({}) = för att radera det första objectet
+13. db.users.deleteMany({})
+14. db.users.remove({name: "david"}, true) = raderar det första document/object
+15. db.users.removeMany({name: "david"})
+16. db.users.remove({}) = db.users.deleteMany({})
+
+** curser:
+
+17. db.users.find() = retunerar inte alla object i en aray. för att vi ska få allt ska vi använda "toArray().mtoden"
+18. db.users.find().toArray.pretty()
+19. db.users.find().forEach(function(cust){print("customer name: " + cust.name)})
+
+** för att kunna komma in i en array och sedan i ett object och ännu längre ner gör vi på detta sätt
+20.  db.users.find({"subscription.type": "yearly"})
+21. db.users.updateOne({name: "david"}, {$set: {"subscription.type": "monthly"}})
+22. db.users.updateOne({name: "anna"}, {$set: {"subscription.date.year": 2020}}) //för att gå djupare 
+23. db.users.findOne({name: "anna"}).subscription = visar en del av parent-objectet
+24. db.users.findOne({name: "anna"}).subscription.date.month = value og the nested field
+
 
 **************************************************************************************
 
@@ -46,3 +77,12 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-mongodb-on-ubuntu
 
 
 ** json vs bson
+
+
+--------------------------------------------------------------
+
+
+
+
+
+--------------------------------------------------------------
