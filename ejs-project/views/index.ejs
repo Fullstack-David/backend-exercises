@@ -7,14 +7,14 @@
   <form action="/" method="post">
     <input
       type="text"
-      placeholder="enter a name of programmerings language"
+      placeholder="Name of a programmerings language"
       name="plNames"
     />
     <button type="submit">Add Data</button>
   </form>
   <ul>
     <% if(plNames.length > 0){ for(let i = 0; i < plNames.length; i++){ %>
-    <li><%= plNames[i] %></li>
+    <li>✅ <%= plNames[i] %></li>
     <% } } else { %>
     <p>No data available</p>
     <% } %>
