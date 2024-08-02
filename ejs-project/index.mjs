@@ -35,6 +35,11 @@ app.get("/about", (request, response) => {
     pageTitle: "About DiDi",
   });
 });
+app.get("/test", (request, response) => {
+  response.render("test", {
+    pageTitle: "Test Page",
+  });
+});
 
 app.post("/", (request, response) => {
   plNames.push(request.body.plNames);

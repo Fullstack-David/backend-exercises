@@ -95,3 +95,9 @@ button {
   border-radius: 5px;
   padding: 10px;
 }
+
+.test-img img {
+  width: 20%;
+  height: auto;
+  margin-top: 30px;
+}
